@@ -10260,6 +10260,11 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.1rem;
   }
 }
+@media (max-width: 400px){
+  .font-11{
+    font-size: 1.1rem;
+  }
+}
 @media (min-width: 576px){
   .font-11{
     font-size: 1.5rem;
