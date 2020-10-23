@@ -3,7 +3,13 @@
 
 <head>
   <title> Lawyer's adda law firm</title>
-  <meta name="viewport" width="device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Lawyer's ADDA- Law Firm  is a full service Indian law firm offering transactional, regulatory, advisory, dispute resolution and tax services. The firm advises a diverse clientele including domestic and international companies, banks and financial institutions, funds, promoter groups and public sector undertakings.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="default">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/all.min.css">
   <link rel="stylesheet" type="text/css"
@@ -21,11 +27,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
   <!-- google fots end -->
   <!-- meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="loading">
+  </div>
+
   <!-- topbar -->
+  
   <div class="row mr-0 ml-0 pt-2 pb-2 d-none d-xl-flex d-none d-lg-flex"
     style="background-color: #003F7C;  color:white;">
     <div class="col-8">
@@ -58,9 +67,10 @@
       </div>
     </div>
   </div>
+
   <!-- navbar -->
   <div class="sticky-top pt-1 pb-1" style="background-color: #7c7c7c;">
-    <nav class="navbar navbar-expand-xl navbar-dark ">
+    <nav class="navbar navbar-expand-xl navbar-dark">
       <a class="navbar-brand font-weight-bold" href="index.html">
         <img width="30" src="img/logo-1.png">
         <span class="font-weight-bold font-11">Lawyer's ADDA-Law Firm</span>
@@ -73,13 +83,18 @@
         id="navbarNavDropdown" style="font-size: large; color: white;">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" style="color: white !important;" href="home.html">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-link" style="color: white !important;" href="home.html">HOME<span
+                class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white !important;" href="about-us.html">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white !important;" href="contact us">CONTACT US</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: white !important;" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ABOUT US
+            </a>
+            <div class="dropdown-menu dropdown-text" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href='who-we-are.html'>Who we Are</a>
+              <a class="dropdown-item" href='contact-us.html'>Contact Us</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style="color: white !important;" href="#" id="navbarDropdownMenuLink"
@@ -242,7 +257,8 @@
                 class="d-none d-md-block d-lg-none"><br class="d-md-none d-lg-block"><br><br
                 class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -258,7 +274,8 @@
               We have a team of expert & professional Advocates, who can deal with your any kind of legal matters.<br
                 class="d-none d-lg-block d-xl-none"><br class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -275,7 +292,8 @@
                 class="d-none d-lg-block d-xl-none"><br class="d-none d-lg-block d-xl-none"><br
                 class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -290,7 +308,8 @@
             <div class="h5 pb-4 dfw-1">
               Legal assistance from the expert and professional Advocates at competitive Professional Fees.
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
       </div>
@@ -309,7 +328,8 @@
               We have a Team of Prominent Professionals in the field of Tax. Who can deal any kind of Tax filing
               Matters.<br class="d-none d-lg-block d-xl-none"><br class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -325,7 +345,8 @@
               We have a team exculusively working as an Income Tax Advocates. Who can deal with any kind of your Tax
               matters.<br class="d-none d-lg-block d-xl-none"><br class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -341,7 +362,8 @@
               We have a team of expert & professional Advocates, who can deal with your any kind of Tax
               Disputes.<br><br><br class="d-none d-lg-block d-xl-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
         <div
@@ -357,7 +379,8 @@
               Legal assistance from the expert and professional Advocates at competitive Professional Fees.<br><br><br
                 class="d-none d-md-block d-lg-none">
             </div>
-            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="contact-us.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
       </div>
@@ -382,7 +405,8 @@
           <div class="service-txt-2 dfw-1">Banking and finance is one of Lawyer's ADDA Law-Firm core and highly
             recognised areas of expertise.<br><br class="d-lg-none d-xl-block"><br>
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/banking-and-finance.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/banking-and-finance.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
 
@@ -395,10 +419,11 @@
           <div class="service-txt-2 dfw-1">One of Lawyer's ADDA Law-Firm key practice areas is corporate and
             commercial, which extends to various sectors.<br><br>
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/corporate-commercial.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/corporate-commercial.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
-      
+
       <div
         class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 service-main wow animate__animated animate__zoomInDown animation-3">
         <div class="service-main-img"><img class="service-img img-fluid" src="services/Images/3.disputeresolution.jpg">
@@ -408,7 +433,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA Law-Firm works virtually in every area of dispute
             resolution. Our dispute resolution.<br class="d-md-none d-lg-block"><br class="d-md-none d-lg-block"><br>
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/dispute-resolution.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/dispute-resolution.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -420,7 +446,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA Law-Firm insurance practice is seen as a market leader. We
             advise clients on the entire gamut.<br class="d-none d-lg-block ">
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/insurance.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/insurance.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -432,7 +459,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA Law-Firm has significant experience and expertise in the
             Energy, Oil & Gas sector.
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/energy-oil-and-gas.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/energy-oil-and-gas.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -444,7 +472,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA Law-Firm clients on increasingly diverse and complex
             matters, after economic.<br class="d-none d-lg-block d-xl-none"><br class="d-none d-lg-block d-xl-none">
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/real-estate.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/real-estate.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -456,7 +485,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA - Law Firm has considerable experience and domain knowledge
             in the Aerospace and Defence (A&D) sector.<br><br>
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/aerospace-and-defence.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/aerospace-and-defence.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -468,7 +498,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA - Law Firm has a strong environmental law practice and the
             lawyers of the Firm regularly advise clients on contentious and non-contention environmental law issues.
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/environment.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/environment.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -480,7 +511,9 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA - Law Firm represents and advises a number of prominent
             players on joint ventures and private equity transactions.<br><br class="d-md-none d-lg-block">
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/joint-ventures-foreign-technical-collaborations.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;"
+            href="services/joint-ventures-foreign-technical-collaborations.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
       <div
@@ -492,7 +525,8 @@
           <div class="service-txt-2 dfw-1">Lawyer's ADDA - Law Firm has many advocates having experience in project
             Finance <br><br>
           </div>
-          <a class="arrow" style="font-size: 20px;" href="services/project-finance.html"><span class="fa fa-chevron-circle-right"></span></a>
+          <a class="arrow" style="font-size: 20px;" href="services/project-finance.html"><span
+              class="fa fa-chevron-circle-right"></span></a>
         </div>
       </div>
     </div>
@@ -519,7 +553,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               Company Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/company-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/company-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -533,7 +568,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               Trade Mark Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/trademark-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/trademark-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -547,7 +583,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               Import Export Code
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/import-export-code-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/import-export-code-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -561,7 +598,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               FSSAI Food Licence
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/fssai-license.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/fssai-license.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -575,7 +613,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               MSME/SSI Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/msme-ssi-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/msme-ssi-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -589,7 +628,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               ESI Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/esi-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/esi-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -603,7 +643,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               GST Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/gst.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/gst.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
 
@@ -617,7 +658,8 @@
             <div class="h5 pdr-1 pt-3 dfw-2">
               Marriage Registration
             </div>
-            <a class="arrow" style="font-size: 20px;" href="registration/marriage-registration.html"><span class="fa fa-chevron-circle-right"></span></a>
+            <a class="arrow" style="font-size: 20px;" href="registration/marriage-registration.html"><span
+                class="fa fa-chevron-circle-right"></span></a>
           </div>
         </div>
       </div>
@@ -693,9 +735,17 @@
   </div>
 
 
+<script>
 
+  var preloader = document.getElementById('loading');
 
-  <script data-ad-client="ca-pub-5537712867881120" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  function myFunction(){
+    preloader.style.display = 'none';
+  }
+</script>
+
+  <script data-ad-client="ca-pub-5537712867881120" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
   <!---javascript-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
