@@ -3,6 +3,7 @@
 
 <head>
   <title> Lawyer's adda law firm</title>
+  <link rel="icon" type="image/png" href=""/>
   <meta charset="UTF-8">
   <meta name="description"
     content="Lawyer's ADDA- Law Firm  is a full service Indian law firm offering transactional, regulatory, advisory, dispute resolution and tax services. The firm advises a diverse clientele including domestic and international companies, banks and financial institutions, funds, promoter groups and public sector undertakings.">
@@ -32,6 +33,46 @@
 <body onload="myFunction()">
   <div id="loading">
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered animate__fadeInDown">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title disclaimer" id="exampleModalLabel">DISCLAIMER</h5>
+        </div>
+        <div class="modal-body text text-1">
+          <P>
+            The rules of the Bar Council of India prohibit law firms from soliciting work or advertising in any manner.
+            By clicking on 'I AGREE', the user acknowledges that:
+          </P>
+          <ul>
+            <li class="a">The user wishes to gain more information about Pratishtha Solutions & Partners Legal LLP- Law
+              Firm, i.e PSP Legal LLP Law Firm, its practice areas and its attorneys, for his/her own information and
+              use;</li>
+          </ul>
+          <ul>
+            <li class="a">The information is made available/provided to the user only on his/her specific request and
+              any information obtained or material downloaded from this website is completely at the user's volition and
+              any transmission, receipt or use of this site is not intended to, and will not, create any lawyer-client
+              relationship; and</li>
+          </ul>
+          <ul>
+            <li class="a">None of the information contained on the website is in the nature of a legal opinion or
+              otherwise amounts to any legal advice.
+            </li>
+          </ul>
+          <div>Pratishtha Solutions & Partners Legal LLP- Law Firm, i.e PSP Legal LLP Law Firm is not liable for any
+            consequence of any action taken by the user relying on material/information provided under this website. If
+            in case of any dispute the Jurisdiction shall be with in Delhi. In cases where the user has any legal
+            issues, he/she in all cases must seek independent legal advice.</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">I Agree</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- topbar -->
   
@@ -200,6 +241,12 @@
       </div>
       <div class="carousel-item">
         <img class="d-block img-fluid slider-img" src="img/slider-11.jpg" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid slider-img" src="img/slider-12.jpg" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block img-fluid slider-img" src="img/slider-13.jpg" alt="...">
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -761,6 +808,11 @@
   <script src="js/wow.js"></script>
   <script>
     new WOW().init();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#exampleModal').modal('show');
+    }); 
   </script>
 </body>
 
